@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gercio.site"),
   title: "Gercio - Sistema de Gestión para Restaurantes con IA | Argentina",
   description:
     "Duplicá tus mesas sin contratar más mozos. Menú digital con chat IA, pagos integrados y gestión de cocina en tiempo real. ROI 18x. Prueba gratis 30 días.",

@@ -1,13 +1,18 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-400 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">G</span>
-            </div>
-            <span className="font-bold text-white">Gercio</span>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logo-text.jpeg"
+              alt="Gercio"
+              width={100}
+              height={18}
+              className="h-6 w-auto object-contain brightness-0 invert opacity-80"
+            />
             <span className="text-gray-600 text-sm">— gercio.site</span>
           </div>
 
