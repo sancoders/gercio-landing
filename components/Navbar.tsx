@@ -34,11 +34,11 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center">
             <Image
-              src="/logo-text.jpeg"
+              src="/logo-azul.png"
               alt="Gercio"
-              width={120}
-              height={21}
-              className="h-8 w-auto object-contain"
+              width={160}
+              height={40}
+              className="h-10 w-auto object-contain"
               priority
             />
           </a>
