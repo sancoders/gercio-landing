@@ -36,9 +36,9 @@ export default function Navbar() {
             <Image
               src="/logo-azul.png"
               alt="Gercio"
-              width={160}
-              height={40}
-              className="h-10 w-auto object-contain"
+              width={220}
+              height={55}
+              className="h-14 w-auto object-contain"
               priority
             />
           </a>

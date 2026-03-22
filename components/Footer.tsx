@@ -7,11 +7,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Image
-              src="/logo-azul.png"
+              src="/logo.png"
               alt="Gercio"
-              width={120}
-              height={30}
-              className="h-8 w-auto object-contain brightness-0 invert opacity-70"
+              width={160}
+              height={40}
+              className="h-12 w-auto object-contain"
             />
             <span className="text-gray-600 text-sm">— gercio.site</span>
           </div>
