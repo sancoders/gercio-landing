@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Star, TrendingUp, Users, Zap } from "lucide-react";
+import { ArrowRight, Play, Star, TrendingUp, Users, Zap, ChefHat, Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -144,7 +144,7 @@ export default function Hero() {
                           Mesa 7 — Café Gutierrez
                         </div>
                         <div className="text-xs text-gray-500">
-                          Hola! Soy tu asistente IA 🤖
+                          Asistente IA · en línea
                         </div>
                       </div>
                       <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
@@ -155,7 +155,7 @@ export default function Hero() {
                     {/* Chat */}
                     <div className="space-y-3 mb-4">
                       <div className="bg-gray-100 rounded-2xl rounded-tl-none px-3 py-2 text-xs text-gray-700 max-w-[80%]">
-                        ¿Qué diferencia hay entre el flat white y el cortado? ☕
+                        ¿Qué diferencia hay entre el flat white y el cortado?
                       </div>
                       <div className="bg-blue-600 rounded-2xl rounded-tr-none px-3 py-2 text-xs text-white max-w-[80%] ml-auto">
                         El flat white tiene más leche cremosa (200ml) y doble
@@ -163,7 +163,7 @@ export default function Hero() {
                         espresso, más intenso. ¿Cuál preferís?
                       </div>
                       <div className="bg-gray-100 rounded-2xl rounded-tl-none px-3 py-2 text-xs text-gray-700 max-w-[80%]">
-                        Dame un flat white y una medialunas x2 🥐
+                        Perfecto, dame un flat white y dos medialunas
                       </div>
                     </div>
 
@@ -199,8 +199,9 @@ export default function Hero() {
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -right-4 top-1/3 bg-white rounded-2xl shadow-xl border border-gray-100 p-3 max-w-[160px]"
               >
-                <div className="text-xs font-bold text-gray-900 mb-2">
-                  🍳 Cocina
+                <div className="flex items-center gap-1.5 text-xs font-bold text-gray-900 mb-2">
+                  <ChefHat size={14} className="text-orange-500" />
+                  Cocina
                 </div>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">

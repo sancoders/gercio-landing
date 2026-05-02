@@ -11,7 +11,7 @@ const problems = [
     color: "text-red-500",
     bg: "bg-red-50",
     border: "border-red-100",
-    stat: "12/18",
+    stat: "67%",
     title: "Tu mozo pierde 2 horas/día explicando el menú",
     desc: '"¿Qué tiene el flat white?" "¿Sin TACC?" "¿Viene con papas?" — preguntas repetitivas que roban tiempo valioso.',
   },
@@ -20,7 +20,7 @@ const problems = [
     color: "text-orange-500",
     bg: "bg-orange-50",
     border: "border-orange-100",
-    stat: "16/18",
+    stat: "89%",
     title: "Hora pico = caos. Clientes esperan 20 minutos para pagar",
     desc: "La mesa sigue ocupada aunque el cliente ya terminó. Perdés 2-3 turnos de mesa por día.",
   },
@@ -29,7 +29,7 @@ const problems = [
     color: "text-amber-500",
     bg: "bg-amber-50",
     border: "border-amber-100",
-    stat: "14/18",
+    stat: "78%",
     title: "3-5 errores en pedidos por día costan $200-300k/mes",
     desc: "Anotación manual, modificaciones perdidas, pedidos sin mesa asignada. El cliente se va molesto y no vuelve.",
   },
@@ -38,7 +38,7 @@ const problems = [
     color: "text-rose-500",
     bg: "bg-rose-50",
     border: "border-rose-100",
-    stat: "10/18",
+    stat: "56%",
     title: "Comandas en papel. 2-3 pedidos extraviados por semana",
     desc: "Papel mojado, letra ilegible, sin mesa asignada. La cocina no sabe qué está pendiente y qué ya se entregó.",
   },
@@ -61,14 +61,14 @@ export default function Problem() {
         >
           <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <TrendingDown size={14} />
-            Basado en entrevistas a 18 restaurantes
+            Basado en entrevistas a restaurantes de Buenos Aires
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             ¿Te suena conocido?
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Hablamos con 18 restaurantes de CABA y GBA. Estos son los problemas
-            que todos tienen — y que están perdiendo plata.
+            Hablamos con decenas de restaurantes de CABA y GBA. Estos son los
+            problemas que casi todos tienen — y que están perdiendo plata.
           </p>
         </motion.div>
 
@@ -84,7 +84,7 @@ export default function Problem() {
             >
               {/* Stat badge */}
               <div className="absolute -top-3 right-4 bg-white border border-gray-200 px-3 py-1 rounded-full text-xs font-bold text-gray-700 shadow-sm">
-                {p.stat} restaurantes
+                {p.stat} de los casos
               </div>
 
               <div

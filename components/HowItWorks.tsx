@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Phone, Users, Rocket, Settings } from "lucide-react";
+import { Phone, Users, Rocket, Settings, Zap } from "lucide-react";
 
 const steps = [
   {
@@ -127,7 +127,9 @@ export default function HowItWorks() {
           className="text-center mt-10"
         >
           <div className="inline-flex items-center gap-3 bg-white border border-gray-200 shadow-sm px-6 py-3 rounded-full text-sm">
-            <span className="text-2xl">⚡</span>
+            <span className="w-7 h-7 bg-amber-400 rounded-full flex items-center justify-center">
+              <Zap size={14} className="text-white" fill="white" />
+            </span>
             <span className="font-semibold text-gray-700">
               Setup completo en 48 horas — sin cambiar tu sistema actual
             </span>

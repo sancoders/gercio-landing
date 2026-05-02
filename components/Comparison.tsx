@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Check, X, AlertTriangle } from "lucide-react";
+import { Check, X, AlertTriangle, Bot } from "lucide-react";
 
 const features = [
   "Menú digital con QR",
@@ -174,8 +174,11 @@ export default function Comparison() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-8 bg-gradient-to-r from-blue-50 to-emerald-50 border border-blue-100 rounded-2xl p-6 text-center"
         >
-          <div className="text-2xl font-black text-gray-900 mb-2">
-            🤖 Único con IA conversacional
+          <div className="inline-flex items-center gap-3 text-2xl font-black text-gray-900 mb-2">
+            <span className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+              <Bot size={22} className="text-white" />
+            </span>
+            Único con IA conversacional
           </div>
           <p className="text-gray-600">
             Ningún competidor tiene chat IA integrado al menú. Gercio es el

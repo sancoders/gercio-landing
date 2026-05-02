@@ -202,7 +202,7 @@ export default function ROICalculator() {
                   <div>
                     <div className="text-sm text-slate-300">Ahorro de staff</div>
                     <div className="text-xs text-slate-500">
-                      1 mozo = 2.5 mozos
+                      1 mozo rinde como 2 o 3
                     </div>
                   </div>
                   <div className="text-emerald-400 font-bold text-lg">
@@ -239,8 +239,8 @@ export default function ROICalculator() {
         </motion.div>
 
         <p className="text-center text-xs text-gray-400 mt-4">
-          * Estimación conservadora basada en datos de 18 restaurantes. Los
-          resultados reales pueden variar.
+          * Estimación conservadora basada en datos relevados de restaurantes
+          de Buenos Aires. Los resultados reales pueden variar.
         </p>
       </div>
     </section>

@@ -16,12 +16,15 @@ import {
   Clock,
   ShoppingCart,
   Rocket,
+  Briefcase,
+  UserCircle2,
+  Smile,
 } from "lucide-react";
 
 const columns = [
   {
     title: "Para el dueño",
-    emoji: "👔",
+    headIcon: Briefcase,
     color: "blue",
     bg: "from-blue-600 to-blue-700",
     lightBg: "bg-blue-50",
@@ -35,7 +38,7 @@ const columns = [
       },
       {
         icon: DollarSign,
-        text: "1 mozo hace trabajo de 2.5 — ahorro $400k/mes",
+        text: "Cada mozo rinde como 2 o 3 — ahorro $400k/mes",
         highlight: "Menos staff",
       },
       {
@@ -52,7 +55,7 @@ const columns = [
   },
   {
     title: "Para el mozo",
-    emoji: "🙋",
+    headIcon: UserCircle2,
     color: "emerald",
     bg: "from-emerald-500 to-emerald-600",
     lightBg: "bg-emerald-50",
@@ -83,7 +86,7 @@ const columns = [
   },
   {
     title: "Para el cliente",
-    emoji: "😊",
+    headIcon: Smile,
     color: "amber",
     bg: "from-amber-500 to-amber-600",
     lightBg: "bg-amber-50",
@@ -152,7 +155,9 @@ export default function Benefits() {
               <div
                 className={`bg-gradient-to-r ${col.bg} px-6 py-5 text-white`}
               >
-                <div className="text-3xl mb-2">{col.emoji}</div>
+                <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center mb-3">
+                  <col.headIcon size={22} className="text-white" />
+                </div>
                 <div className="font-bold text-xl">{col.title}</div>
               </div>
 
